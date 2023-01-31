@@ -1,0 +1,12 @@
+antiorm==1.2.1
+cffi==1.15.1
+coveopush @ git+https://github.com/coveo-labs/SDK-Push-Python@3c80e796f34b14449ed2e7f551284fc4e950de63
+cryptography==38.0.3
+db==0.1.1
+Deprecated==1.2.13
+jsonpickle==3.0.0
+jwcrypto==1.4.2
+pycparser==2.21
+python-jwt==4.0.0
+requests==2.11.1
+wrapt==1.14.1

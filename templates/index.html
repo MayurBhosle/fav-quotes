@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> favorites quotes </title>
+		 <meta charset="UTF-8">
+    <meta name="viewport" content="widhth=device-width, initial scale=1">
+    <title>Favorite quotes</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}">
+	</head>
+	<body>
+	<nav style="margin-top:25px; margin-left:45px">
+        <a class="btn btn-primary" href="{{ url_for('quotes')}}"> Add a quote</a>
+    </nav>
+    <br>
+    <div class="container theme-showcase" role="main">
+        <div style="color:#fff; background-color: orange", class="jumbotron">
+            <h1>
+                Favorite quotes
+            </h1>
+        </div>
+				{% for r in result %}
+
+        <div style="color:#ff; background-color:cyan">
+            <h1>{{r.author}}</h1>
+        </div>
+        <div style="color:#ff; background-color:green; font-size:28px">
+            <p>{{r.quote}}</p>
+        </div>
+				{% endfor %}
+
+    </div>
+
+	</body>
+</html>

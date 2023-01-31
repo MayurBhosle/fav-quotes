@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+
+    <title>Add your quotes</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}" >
+</head>
+<body>
+    <br>
+    <br>
+    <form action="/process" method="post">
+        <div class="form-group">
+            <label for="author"> Quote Author </label>
+            <input type="text" id="inputName" name = 'author' class="form-control" placeholder="add your quote here..">
+        </div>
+        <div class="form-group">
+            <label for="quote"> Quote</label>
+                <textarea class="form-control" rows="5" id="quote" name = 'quote' placeholder="Add your quote here.."></textarea>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit"> Submit your quote </button>
+    </form>
+</body>
+</html>
